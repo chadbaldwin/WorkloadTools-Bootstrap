@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+
+  mssql-source:
+    container_name: mssql-source
+    image: wwisql
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: yourStrong(!)Password
+
+  mssql-target:
+    container_name: mssql-target
+    image: wwisql
+    ports:
+      - "2433:1433"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: yourStrong(!)Password
