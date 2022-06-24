@@ -5,6 +5,7 @@ services:
   mssql-source:
     container_name: mssql-source
     image: wwisql
+#    platform: linux
     ports:
       - "1433:1433"
     environment:
@@ -13,6 +14,7 @@ services:
 
   mssql-target:
     container_name: mssql-target
+#    platform: linux
     image: wwisql
     ports:
       - "2433:1433"

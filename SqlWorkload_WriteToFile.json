@@ -1,0 +1,20 @@
+{
+  "Controller": {
+    "Listener": {
+      "__type": "ExtendedEventsWorkloadListener",
+      "ConnectionInfo": {
+        "ServerName": "localhost,1433",
+        "DatabaseName": "WideWorldImporters",
+        "UserName": "sa",
+        "Password": "yourStrong(!)Password"
+      },
+      "DatabaseFilter": "Source"
+    },
+    "Consumers": [
+      {
+        "__type": "WorkloadFileWriterConsumer",
+        "OutputFile": "C:\\D\\wlt\\SqlWorkload.sqlite"
+      }
+    ]
+  }
+}
