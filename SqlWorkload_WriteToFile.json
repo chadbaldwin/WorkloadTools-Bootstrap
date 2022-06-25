@@ -7,13 +7,12 @@
         "DatabaseName": "WideWorldImporters",
         "UserName": "sa",
         "Password": "yourStrong(!)Password"
-      },
-      "DatabaseFilter": "Source"
+      }
     },
     "Consumers": [
       {
         "__type": "WorkloadFileWriterConsumer",
-        "OutputFile": "C:\\D\\wlt\\SqlWorkload.sqlite"
+        "OutputFile": ".\\recordings\\SqlWorkload.sqlite"
       }
     ]
   }

@@ -1,0 +1,20 @@
+{
+  "Controller": {
+    "Listener": {
+      "__type": "FileWorkloadListener",
+      "Source": ".\\recordings\\SqlWorkload.sqlite",
+      "SynchronizationMode": true
+    },
+    "Consumers": [
+      {
+        "__type": "ReplayConsumer",
+        "ConnectionInfo": {
+            "ServerName": "localhost,2433",
+            "DatabaseName": "WideWorldImporters",
+            "UserName": "sa",
+            "Password": "yourStrong(!)Password"
+        }
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ services:
 
   mssql-source:
     container_name: mssql-source
+    mem_limit: 2g # running into memory issues running this locally
     image: wwisql
 #    platform: linux
     ports:
@@ -14,6 +15,7 @@ services:
 
   mssql-target:
     container_name: mssql-target
+    mem_limit: 2g # running into memory issues running this locally
 #    platform: linux
     image: wwisql
     ports:

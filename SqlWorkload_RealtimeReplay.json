@@ -1,0 +1,27 @@
+{
+  "Controller": {
+    "Listener": {
+      "__type": "ExtendedEventsWorkloadListener",
+      "ConnectionInfo": {
+        "ServerName": "localhost,1433",
+        "DatabaseName": "WideWorldImporters",
+        "UserName": "sa",
+        "Password": "yourStrong(!)Password"
+      }
+    },
+    "Consumers": [
+      {
+        "__type": "ReplayConsumer",
+        "ConnectionInfo": {
+            "ServerName": "localhost,2433",
+            "DatabaseName": "WideWorldImporters",
+            "UserName": "sa",
+            "Password": "yourStrong(!)Password"
+        },
+        "DisplayWorkerStats": true,
+        "QueryTimeoutSeconds": 300,
+        "WorkerStatsCommandCount": 100
+      }
+    ]
+  }
+}
