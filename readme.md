@@ -10,18 +10,18 @@ All of the commands listed are assumed to be run at the root of this repository
 
 ## Installing WorkLoadTools
 
-```powershell
+```pwsh
 ### Create a new downloads directory to store downloaded files in (this directory is already ignored in the repository)
 New-Item -Name downloads -ItemType Directory -Force
 
 ### Download the installer from GitHub referencing the latest (as of this writing) release:
-iwr -Uri https://github.com/spaghettidba/WorkloadTools/releases/download/v1.5.17/WorkloadTools_x64.exe -OutFile .\downloads\WorkloadTools_x64.exe
+iwr -Uri 'https://github.com/spaghettidba/WorkloadTools/releases/download/v1.5.17/WorkloadTools_x64.exe' -OutFile '.\downloads\WorkloadTools_x64.exe'
 
 ### Install WorkloadTools
 .\downloads\WorkloadTools_x64.exe /install /passive /norestart
 
 ### Add WorkloadTools to your path variable
-[Environment]::SetEnvironmentVariable("PATH", $Env:Path + ";C:\Program Files\WorkloadTools", [EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable("PATH", $Env:Path + ';C:\Program Files\WorkloadTools', [EnvironmentVariableTarget]::Machine)
 ```
 
 ----
