@@ -10,7 +10,7 @@ services:
       - "1433:1433"
     environment:
       ACCEPT_EULA: Y
-      SA_PASSWORD: yourStrong(!)Password
+      MSSQL_SA_PASSWORD: yourStrong(!)Password
 
   mssql-target:
     container_name: mssql-target
@@ -20,4 +20,4 @@ services:
       - "2433:1433"
     environment:
       ACCEPT_EULA: Y
-      SA_PASSWORD: yourStrong(!)Password
+      MSSQL_SA_PASSWORD: yourStrong(!)Password
