@@ -11,6 +11,6 @@ ADD https://raw.githubusercontent.com/microsoft/sql-server-samples/master/sample
 ADD https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Full.bak /tmp/backup/
 
 RUN (/opt/mssql/bin/sqlservr &) | grep -q "Recovery is complete" \
-    && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i /tmp/backup/restore.sql
+    && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $MSSQL_SA_PASSWORD -i /tmp/backup/restore.sql
 
 EXPOSE 1433
