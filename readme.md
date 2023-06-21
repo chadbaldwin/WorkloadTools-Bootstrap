@@ -1,6 +1,6 @@
 # Getting Started
 
-The goal of this solution is to set up a working demonstration of spaghettidba's WorkloadTools in action, specifically realtime replay between two SQL Server instances.
+The goal of this solution is to set up a working demonstration of [spaghettidba's WorkloadTools](https://github.com/spaghettidba/WorkloadTools) in action, specifically realtime replay between two SQL Server instances.
 
 To make this as simple as possible, we're going to use Docker, Docker Compose and Dockerfiles's.
 
